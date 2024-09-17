@@ -1,0 +1,12 @@
+def create_dir_structure(root_dir, source_dir, dest_dir):
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+    for file_name in os.listdir(source_dir):
+        if file_name.endswith(('.jpg','.jpeg','.png')):
+            person_id = file_name.split('_')[0]
+            person_dir = os.path.join(dest_dir, person_id)
+            if not os.path.exists(person_dir):
+                os.makedirs(person_dir)
+            shutil.copy(os.path.join(source_dir, file_name), os.path.join(person_dir, file_name))
+
+
