@@ -1,0 +1,5 @@
+MARKET-1501:
+https://www.kaggle.com/datasets/pengcw1/market-1501
+
+DUKE-MTMC:
+https://www.kaggle.com/datasets/whurobin/dukemtmcreid
